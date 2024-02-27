@@ -25,7 +25,6 @@ This Unity project demonstrates a simple navigation behavior using Raycast. The 
 - **force**: Forward movement force when not navigating towards the player.
 - **rotationSpeed**: Rotation speed when avoiding obstacles.
 - **back**: Flag to determine if the object should move backward.
-- **front**: Flag to determine if there is an obstacle in front of the object.
 - **agent**: NavMeshAgent component for navigation towards the player.
 - **player**: Target player's Transform.
 - **OnDrawGizmosSelected()**: Draws a blue wireframe sphere around the object to visualize the detection range.
