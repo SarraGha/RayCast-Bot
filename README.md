@@ -1,5 +1,5 @@
 # Unity Raycast Navigation Project
-
+![Capture d'écran 2024-02-27 231554](https://github.com/SarraGha/RayCast-Bot/assets/77792332/80fc28fd-4310-4a1b-84e7-ae5cb5a0d325)
 This Unity project demonstrates a simple navigation behavior using Raycast. The main idea is to navigate towards a target (player) using the Unity NavMeshAgent while avoiding obstacles using Raycast detection.
 
 ## Features
