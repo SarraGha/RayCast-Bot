@@ -11,7 +11,6 @@ public class Raycast : MonoBehaviour
     public float force = 10f;
     public float rotationSpeed = 50f;
     public bool back;
-    public bool front;
     public NavMeshAgent agent;
     public Transform player;
     void Start()
@@ -27,13 +26,12 @@ public class Raycast : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // OnDrawGizmosSelected();
 
         float distance = Vector3.Distance(player.position, transform.position);
 
         if (distance <= 3.5f)
         {
-            // Move towards the target
+            // Move towards the player
             agent.SetDestination(player.position);
         }
         else
@@ -56,17 +54,6 @@ public class Raycast : MonoBehaviour
             {
                 back = false;
             }
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 3f))
-            {
-                //transform.rotation = Quaternion.LookRotation(-Vector3.forward);
-                front = true;
-            }
-            else
-            {
-                front = false;
-            }
-
-
 
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward + Vector3.right), out hit, 3f))
             {
